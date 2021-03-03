@@ -17,3 +17,4 @@ Tell your story web visualization Project 2
 
 ## **Visuals:**
 >- Topical graph with heatmap of Air Quality
+>- Add layer to map to include demographic data
