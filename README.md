@@ -10,9 +10,10 @@ Tell your story web visualization Project 2
 ## **Data sets:**
 >- Air Quality data set: https://www.kaggle.com/epa/epa-historical-air-quality?select=co_daily_summary
 >- US Census: https://data.census.gov/cedsci/
+>- Use Python flask route to pass data from PostgressSQL database
 
-## **Insperation:**
->-
+## **Inspiration:**
+>- Analyze Air Quality in California & compare to demographic information from the Census data.
 
 ## **Visuals:**
->-
+>- Topical graph with heatmap of Air Quality
