@@ -11,8 +11,9 @@ Tell your story web visualization Project 2
 >- **Kayla St. Germain** *(KStG1992)*
 
 ## **Data sets:**
->- Air Quality data set: https://docs.airnowapi.org/HistoricalObservationsByLatLon/docs
+>- Air Quality current: https://docs.airnowapi.org/HistoricalObservationsByLatLon/docs
 >>- scrape current data for visualization of current air quality
+>- Air Quality historical data: https://aqs.epa.gov/aqsweb/airdata/download_files.html
 >>- csv to database (cleanse using pandas); Use Python flask route to pass data from PostgressSQL database
 >- US Census:  
     * by county: https://www.census.gov/data/datasets/time-series/demo/popest/2010s-counties-total.html 
