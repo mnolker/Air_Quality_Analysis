@@ -12,10 +12,12 @@ Tell your story web visualization Project 2
 
 ## **Data sets:**
 >- Air Quality data set: https://docs.airnowapi.org/HistoricalObservationsByLatLon/docs
+>>- scrape current data for visualization of current air quality
+>>- csv to database (cleanse using pandas); Use Python flask route to pass data from PostgressSQL database
 >- US Census:  
     * by county: https://www.census.gov/data/datasets/time-series/demo/popest/2010s-counties-total.html 
     * by city: https://www.census.gov/data/datasets/time-series/demo/popest/2010s-total-cities-and-towns.html
->- Use Python flask route to pass data from PostgressSQL database
+>>- Use Python flask route to pass data from PostgressSQL database
 
 ## **Visuals:**
 >- Topical graph with heatmap of Air Quality
