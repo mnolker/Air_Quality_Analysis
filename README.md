@@ -9,7 +9,9 @@ Tell your story web visualization Project 2
 
 ## **Data sets:**
 >- Air Quality data set: https://docs.airnowapi.org/HistoricalObservationsByLatLon/docs
->- US Census: https://www.census.gov/data/datasets/time-series/demo/popest/2010s-counties-total.html#par_textimage_70769902
+>- US Census:  
+    * by county: https://www.census.gov/data/datasets/time-series/demo/popest/2010s-counties-total.html#par_textimage_70769902  
+    * by city: https://www.census.gov/data/datasets/time-series/demo/popest/2010s-total-cities-and-towns.html
 >- Use Python flask route to pass data from PostgressSQL database
 
 ## **Inspiration:**
