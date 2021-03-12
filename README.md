@@ -5,9 +5,9 @@ Tell your story web visualization Project 2
 >- Analyze Air Quality in California by county & compare to demographic information from the Census data. Information can be useful for businesses to make saftey decisions on outdoor working employee's health.
 
 ## **Team members:** *(git repository user name)*
+>- **Julia Headlee**  *(julieheadlee)*
 >- **Melanie Nolker** *(mnolker)*
 >- **Alicia Perez** *(AliciaAPerez)*
->- **Julia Headlee**  *(julieheadlee)*
 >- **Kayla St. Germain** *(KStG1992)*
 
 ## **Data sets:**
