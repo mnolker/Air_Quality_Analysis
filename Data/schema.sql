@@ -1,8 +1,8 @@
 --Drop existing tables
-DROP TABLE "County";
-DROP TABLE "Sites";
 DROP TABLE "AirQuality";
 DROP TABLE "CensusPopulation";
+DROP TABLE "Sites";
+DROP TABLE "County";
 
 -- AirQuality_DB
 
@@ -18,9 +18,9 @@ CREATE TABLE "Sites" (
     "site_no" varchar   NOT NULL,
     "Latitude" float   NOT NULL,
     "Longitude" float   NOT NULL,
-    "Elevation" float   NOT NULL,
-    "Land_Use" varchar   NOT NULL,
-    "Location_Setting" varchar   NOT NULL,
+    "Elevation" float   		,
+    "Land_Use" varchar          ,
+    "Location_Setting" varchar  ,
     "State_Name" varchar   NOT NULL,
     "County_Code" int   NOT NULL,
     "City_Name" varchar   NOT NULL,
