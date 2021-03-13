@@ -27,7 +27,21 @@ attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under 
 
 controlLayers.addBaseLayer(terrain, 'Stamen Terrain basemap');
 
-
+function markerColor(aqi) {
+    if (aqi <= 50) {
+        return "green"
+    } else if (aqi <= 51 &&  aqi <= 100) {
+        return "yellow"
+    } else if (aqi <= 101 && aqi <= 150) {
+        return "orange"
+    } else if (aqi <= 151 && aqi <= 200) {
+        return "red"
+    } else if (aqi <= 201 && aqi <= 300) {
+        return "purple"
+    } else {
+        return "maroon"
+    }
+}
 // Read markers data from data.csv
 $.get('../Data/currentAQIData.csv', function(csvString) {
 
@@ -40,8 +54,11 @@ $.get('../Data/currentAQIData.csv', function(csvString) {
         CurrentAQIValue = row.CurrentAQIValue.toString()
         let marker = L.circle([row.Latitude, row.Longitude], {
         radius: 7500,
-        opacity: 1
-        }).bindPopup(row.CurrentPollutant + ":" + CurrentAQIValue);
+        fillOpacity: 0.50,
+        stroke: false,
+        fillColor: markerColor(row.CurrentAQIValue)
+        }).bindPopup("<strong>" + row.CurrentPollutant + "</strong><br>" + 
+            "<h3>"+ CurrentAQIValue + "</h3>");
         
         marker.addTo(map);
     }
