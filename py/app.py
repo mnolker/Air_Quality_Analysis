@@ -9,7 +9,7 @@ import psycopg2
 
 from flask import Flask, jsonify, render_template
 
-import folium
+from config import password
 
 app = Flask(__name__)
 
@@ -17,26 +17,31 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     start_coords = (46.9540700, 142.7360300)
-    
+
+@app.route('/lapseScrape')
+def lapseScrape(startDate, endDate):
+    strSQL = "SELECT "
+
 
 if __name__ == '__main__':
     app.run(debug=True)
 # #################################################
 # # Database Setup
 # #################################################
-# rds_connection_string = "{UIP}@localhost:5432/customer_db"
-# engine = create_engine(f'postgresql://{rds_connection_string}')
+# create connection to ETL_project_DB in postgres
+engine = create_engine('postgresql://postgres:'+ password + '@localhost:5432/AirQuality_DB')
+connection = engine.connect()
 
-# # Check for table names
-# engine.table_names()
+# Check for table names
+engine.table_names()
 
-# # reflect an existing database into a new model
-# Base = automap_base()
+# reflect an existing database into a new model
+Base = automap_base()
 
-# # reflect the tables
-# Base.prepare(engine, reflect=True)
+# reflect the tables
+Base.prepare(engine, reflect=True)
 
-# # Save reference to the table
+# Save reference to the table
 
 
 # #################################################

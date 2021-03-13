@@ -30,4 +30,4 @@ var myMap = L.map("map-id", {
     accessToken: API_KEY
   }).addTo(myMap);
 
-// Add the choropleth AQI data as a timeseries 
+// get the data to create the historical data
