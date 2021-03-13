@@ -18,6 +18,10 @@
     font-family: Verdana;
 } 
 
+.label {
+  color : darkblue;
+}
+
 #map-id {
     position: relative;
     border: 1px solid black;
